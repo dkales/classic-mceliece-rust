@@ -178,7 +178,7 @@ mod tests {
     }
 }
 
-#[cfg(doctest)]
+#[cfg(all(doctest, feature = "mceliece348864"))]
 mod test_readme {
     macro_rules! external_doc_test {
         ($x:expr) => {
